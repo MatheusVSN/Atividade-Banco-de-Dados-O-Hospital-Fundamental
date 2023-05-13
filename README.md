@@ -214,3 +214,30 @@ INSERT INTO tipoQuarto (tipo_quarto_descricao, tipo_quarto_valor) VALUES
   
   ```
 </details>
+
+## Parte 4 - Alterando o banco de dados
+Pensando no banco que já foi criado para o Projeto do Hospital, realize algumas alterações nas tabelas e nos dados usando comandos de atualização e exclusão:
+
+- Crie um script que adicione uma coluna “em_atividade” para os médicos, indicando se ele ainda está atuando no hospital ou não. 
+- Crie um script para atualizar ao menos dois médicos como inativos e os demais em atividade.
+
+<details>
+ <summary>Script</summary>
+ 
+ ```mysql
+ 
+ -- Configurando a coluna "em atividade" para os medicos
+ALTER TABLE medico add em_atividade BOOLEAN;
+UPDATE medico SET em_atividade = 1 where medico_id = 1;
+UPDATE medico SET em_atividade = 1 where medico_id = 2;
+UPDATE medico SET em_atividade = 0 where medico_id = 3;
+UPDATE medico SET em_atividade = 1 where medico_id = 4;
+UPDATE medico SET em_atividade = 1 where medico_id = 5;
+UPDATE medico SET em_atividade = 0 where medico_id = 6;
+UPDATE medico SET em_atividade = 1 where medico_id = 7;
+UPDATE medico SET em_atividade = 1 where medico_id = 8;
+UPDATE medico SET em_atividade = 1 where medico_id = 9;
+UPDATE medico SET em_atividade = 1 where medico_id = 10;
+ 
+ ```
+</details>
