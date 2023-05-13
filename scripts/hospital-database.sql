@@ -163,21 +163,21 @@ INSERT INTO medico (medico_nome, medico_email, medico_cpf, medico_crm, medico_ca
 
 -- Adicionando pacientes
 INSERT INTO paciente (paciente_nome, paciente_nascimento, paciente_endereco, paciente_telefone, paciente_email, paciente_rg, paciente_cpf, paciente_convenio) VALUES
-("Luísa Alves", "15-05-1982", "Rua José",11999998888, "luisa.alves@email.com", 55667788, 12345678900, 1),
-("Pedro Henrique", "10-02-1975", "Avenida Brasil", 11987654321, "pedro.henrique@email.com", 11223344, 98765432111, 2),
-("Ana Carolina", "20-07-1990", "Rua João Pessoa", 11333333333, "ana.caronlina@email.com", 44556677, 23456789022, 3),
-("Lucas Mendes", "05-11-1988", "Rua General Glicério", 11777777777, "lucas.mendes@email.com", 88776655, 34567890133, 4),
-("Mariana Ferreira", "02-09-1995", "Avenida Paulista", 1177778888, "mariana.ferreira@email.com", 77889900, 45678901244, 1),
-("Guilherme Souza", "18-04-1980", "Rua do Rosário", 1155554444, "guilherme.souza@email.com", 33445566, 56789012355, 2),
-("Fernanda Costa", "30-12-1985", "Avenida Rio Branco", 1166665555, "fernanda.costa@email.com", 22113344, 67890123466, 3),
-("Bruno Santos", "25-06-1992", "Rua XV de Novembro", 1122221111, "bruno.santos@email.com", 55443322, 78901234577, 4),
-("Marina Costa", "17-09-1987", "Rua Barão", 1133332222, "marina.costa@email.com", 88997766, 89012345688, 1),
-("André Luiz", "01-02-1981", "Rua da Consolação", 1133334444, "andre.luiz@email.com", 11001122, 90123456799, 2),
-("Camila Pereira", "19-06-1998", "Rua das Flores", 1144443333, "camila.pereira@email.com", 77665544, 1234567810, 3),
-("Eduardo Santos", "07-03-1977", "Avenida Atlântica", 1122223333, "eduardo.santos@email.com", 66554433, 12345678901, 4),
-("Juliana Ferreira", "13-12-1993", "Rua Major", 1144445555, "juliana.ferreira@email.com", 99887766, 234567890, 1),
-("Rafaela Oliveira", "09-07-1991", "Rua Joaquim", 11977776666, "rafaela.oliveira@email.com", 99887766, 34567890123, 2),
-("Gustavo Silva", "03-05-1986", "Avenida Rebouças", 1122223333, "gustavo.silva@email.com", 77665544, 45678901234, 3);
+("Luísa Alves", "1982-05-15", "Rua José",11999998888, "luisa.alves@email.com", 55667788, 12345678900, 1),
+("Pedro Henrique", "1975-02-10", "Avenida Brasil", 11987654321, "pedro.henrique@email.com", 11223344, 98765432111, 2),
+("Ana Carolina", "1990-07-20", "Rua João Pessoa", 11333333333, "ana.caronlina@email.com", 44556677, 23456789022, 3),
+("Lucas Mendes", "1988-11-05", "Rua General Glicério", 11777777777, "lucas.mendes@email.com", 88776655, 34567890133, 4),
+("Mariana Ferreira", "1995-09-02", "Avenida Paulista", 1177778888, "mariana.ferreira@email.com", 77889900, 45678901244, 1),
+("Guilherme Souza", "1980-04-18", "Rua do Rosário", 1155554444, "guilherme.souza@email.com", 33445566, 56789012355, 2),
+("Fernanda Costa", "1985-12-30", "Avenida Rio Branco", 1166665555, "fernanda.costa@email.com", 22113344, 67890123466, 3),
+("Bruno Santos", "1992-06-25", "Rua XV de Novembro", 1122221111, "bruno.santos@email.com", 55443322, 78901234577, 4),
+("Marina Costa", "1987-09-17", "Rua Barão", 1133332222, "marina.costa@email.com", 88997766, 89012345688, 1),
+("André Luiz", "1981-02-01", "Rua da Consolação", 1133334444, "andre.luiz@email.com", 11001122, 90123456799, 2),
+("Camila Pereira", "1998-06-19", "Rua das Flores", 1144443333, "camila.pereira@email.com", 77665544, 1234567810, 3),
+("Eduardo Santos", "1977-03-07", "Avenida Atlântica", 1122223333, "eduardo.santos@email.com", 66554433, 12345678901, 4),
+("Juliana Ferreira", "1993-12-13", "Rua Major", 1144445555, "juliana.ferreira@email.com", 99887766, 234567890, 1),
+("Rafaela Oliveira", "1991-07-09", "Rua Joaquim", 11977776666, "rafaela.oliveira@email.com", 99887766, 34567890123, 2),
+("Gustavo Silva", "1986-05-03", "Avenida Rebouças", 1122223333, "gustavo.silva@email.com", 77665544, 45678901234, 3);
 
 -- Inserindo Receitas
 INSERT INTO receita (receita_medicamentos, receita_quantidade_medicamentos, receita_instrucoes_uso) VALUES
@@ -204,26 +204,26 @@ INSERT INTO receita (receita_medicamentos, receita_quantidade_medicamentos, rece
 
 -- Inserindo Consultas
 INSERT INTO consulta (consulta_data, consulta_hora, consulta_medico, consulta_valor, consulta_especialidade, consulta_receita, consulta_convenio, consulta_paciente) VALUES
-    ('01-01-2015', '10:00:00', 1, 150, 1, 1, 1, 1),
-    ('01-02-2015', '11:00:00', 2, 150, 2, 2, 2, 2),
-    ('01-03-2015', '12:00:00', 3, 200, 3, 3, 3, 3),
-    ('01-03-2015', '13:00:00', 4, 200, 4, 4, 4, 4),
-    ('01-05-2015', '14:00:00', 5, 250, 5, 5, 1, 5),
-    ('01-06-2015', '15:00:00', 6, 250, 6, 6, 2, 6),
-    ('01-08-2015', '16:00:00', 7, 300, 7,7, 3, 7),
-    ('01-08-2015', '17:00:00', 8, 300, 8, 8, 4, 8),
-    ('01-09-2015', '18:00:00', 9, 350, 9, 9, 1, 9),
-    ('01-10-2015', '19:00:00', 10, 350, 10, 10, 2, 10),
-    ('01-01-2016', '10:00:00', 1, 150, 1, 11, 3, 11),
-    ('01-02-2016', '11:00:00', 2, 150, 2, 12, 4, 12),
-    ('01-03-2016', '12:00:00', 3, 200, 3, 13, 1, 13),
-    ('01-03-2016', '13:00:00', 4, 200, 4, 14, 2, 14),
-    ('01-05-2016', '14:00:00', 5, 250, 5, 15, 3, 15),
-    ('01-06-2016', '15:00:00', 6, 250, 6, 16, 4, 1),
-    ('01-08-2016', '16:00:00', 7, 300, 7, 17, 1, 2),
-    ('08-01-2016', '17:00:00', 8, 300, 8, 18, 2, 3),
-    ('01-09-2016', '18:00:00', 9, 350, 9, 19, 3, 4),
-    ('01-10-2016', '19:00:00', 10, 350, 10, 20, 4, 5);
+('2015-01-01', '10:00:00', 1, 150, 1, 1, 1, 1),
+('2015-02-01', '11:00:00', 2, 150, 2, 2, 2, 2),
+('2015-03-01', '12:00:00', 3, 200, 3, 3, 3, 3),
+('2015-03-01', '13:00:00', 4, 200, 4, 4, 4, 4),
+('2015-05-01', '14:00:00', 5, 250, 5, 5, 1, 5),
+('2015-06-01', '15:00:00', 6, 250, 6, 6, 2, 6),
+('2015-08-01', '16:00:00', 7, 300, 7,7, 3, 7),
+('2015-08-01', '17:00:00', 8, 300, 8, 8, 4, 8),
+('2015-09-01', '18:00:00', 9, 350, 9, 9, 1, 9),
+('2015-10-01', '19:00:00', 10, 350, 10, 10, 2, 10),
+('2016-01-01', '10:00:00', 1, 150, 1, 11, 3, 11),
+('2016-02-01', '11:00:00', 2, 150, 2, 12, 4, 12),
+('2016-03-01', '12:00:00', 3, 200, 3, 13, 1, 13),
+('2016-03-01', '13:00:00', 4, 200, 4, 14, 2, 14),
+('2016-05-01', '14:00:00', 5, 250, 5, 15, 3, 15),
+('2016-06-01', '15:00:00', 6, 250, 6, 16, 4, 1),
+('2016-08-01', '16:00:00', 7, 300, 7, 17, 1, 2),
+('2016-01-08', '17:00:00', 8, 300, 8, 18, 2, 3),
+('2016-09-01', '18:00:00', 9, 350, 9, 19, 3, 4),
+('2016-10-01', '19:00:00', 10, 350, 10, 20, 4, 5);
 
 -- Inserindo Internações
 INSERT INTO internacao (internacao_data_entrada, internacao_data_prevista_alta, internacao_data_efetiva_alta, internacao_procedimento, internacao_paciente_id, internacao_medico_id, internacao_enfermeiro_id, internacao_quarto_id) VALUES 
@@ -285,3 +285,16 @@ INSERT INTO tipoQuarto (tipo_quarto_descricao, tipo_quarto_valor) VALUES
 ('Apartamento', 500),
 ('Quarto Duplo', 300),
 ('Enfermaria', 150);
+
+-- Configurando a coluna "em atividade" para os medicos
+ALTER TABLE medico add em_atividade BOOLEAN;
+UPDATE medico SET em_atividade = 1 where medico_id = 1;
+UPDATE medico SET em_atividade = 1 where medico_id = 2;
+UPDATE medico SET em_atividade = 0 where medico_id = 3;
+UPDATE medico SET em_atividade = 1 where medico_id = 4;
+UPDATE medico SET em_atividade = 1 where medico_id = 5;
+UPDATE medico SET em_atividade = 0 where medico_id = 6;
+UPDATE medico SET em_atividade = 1 where medico_id = 7;
+UPDATE medico SET em_atividade = 1 where medico_id = 8;
+UPDATE medico SET em_atividade = 1 where medico_id = 9;
+UPDATE medico SET em_atividade = 1 where medico_id = 10;
