@@ -29,7 +29,7 @@ Por último, crie um script SQL para a geração do banco de dados e para instru
 
 ![Parte2](fotos/parte2.png)
 
-### Parte 3
+### Parte 3 - Alimentando o banco de dados
 Jogando nas regras que você criou: 
 Crie scripts de povoamento das tabelas desenvolvidas na atividade anterior
 Observe as seguintes atividades: 
